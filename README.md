@@ -24,6 +24,36 @@ Cada relatório tem o seu próprio tema, mas todos seguem a mesma estrutura desc
 
 ---
 
+## 🚀 Como começar
+
+1. Na página do repositório da disciplina no GitHub, clique em **"Use this
+   template" → "Create a new repository"**. Dê um nome ao seu repositório e
+   deixe a visibilidade como **pública**.
+2. Clone o **seu** repositório recém-criado para a sua máquina:
+
+   ```bash
+   git clone <endereço do SEU repositório>
+   cd <nome-do-seu-repositório>
+   ```
+
+3. Abra a pasta na sua IDE preferida — VS Code, Cursor, Antigravity, ou
+   qualquer outra com suporte a Jupyter — e comece pelo notebook da
+   atividade da vez.
+
+> 💡 **Não quer instalar nada?** Duas alternativas rodam direto do navegador:
+>
+> - **GitHub Codespaces** — botão _Code → Codespaces_ na página do repositório.
+> - **Google Colab** — abra pelo GitHub (_File → Open notebook → GitHub_),
+>   lembrando de subir também a pasta `scripts/`, e de **baixar o `.ipynb` e
+>   commitá-lo** no fim: o Colab não faz push sozinho.
+>
+> Em qualquer uma das formas, o diretório de trabalho precisa ser a **raiz do
+> repositório** (onde ficam o notebook e a pasta `scripts/`) — é dali que o
+> `import scripts.kit_rNN` enxerga o kit. Os notebooks não usam rede, não
+> pedem upload e não dependem do Drive. Só Python puro até a Aula 13.
+
+---
+
 ## 🗂️ As atividades
 
 | #   | Relatório                                                                                 | Aulas | Unidade | Prazo         |
@@ -109,13 +139,11 @@ A entrega tem duas partes — o `git push` guarda o seu trabalho, mas **só
 conta como entregue depois que o link do repositório for enviado no Google
 Sala de Aula**.
 
-1. Confira se o seu repositório está como **público** (Settings →
-   General → Danger Zone, se precisar trocar).
-2. Preencha **todas** as células `# TODO` e todos os campos de texto.
-3. Rode o notebook **inteiro, de cima para baixo**, e **salve**. As saídas
+1. Preencha **todas** as células `# TODO` e todos os campos de texto.
+2. Rode o notebook **inteiro, de cima para baixo**, e **salve**. As saídas
    precisam estar visíveis no arquivo — é isso que o professor lê.
-4. Rode a última célula, `assinatura()`, e copie a linha impressa.
-5. Faça o commit final usando essa linha como mensagem, e dê push para a
+3. Rode a última célula, `assinatura()`, e copie a linha impressa.
+4. Faça o commit final usando essa linha como mensagem, e dê push para a
    branch `main` do **seu** repositório:
 
 ```bash
@@ -124,7 +152,7 @@ git commit -m "ASSINATURA: <cole aqui a linha impressa>"
 git push
 ```
 
-6. Vá ao **Google Sala de Aula**, abra a atividade correspondente e cole o
+5. Vá ao **Google Sala de Aula**, abra a atividade correspondente e cole o
    endereço do seu repositório no GitHub. **É esse link que registra a
    entrega** — sem ele o professor não sabe que você terminou, mesmo que o
    push tenha funcionado.
@@ -143,21 +171,6 @@ saídas.
 
 A correção volta como **nota e comentário no Google Sala de Aula** — é lá que
 a conversa continua, e é lá que você responde se discordar de algum ponto.
-
-### Rodando o notebook
-
-Qualquer uma das três formas serve. Em todas, o diretório de trabalho precisa
-ser a **raiz do seu repositório** (onde ficam o notebook e a pasta
-`scripts/`) — é dali que o `import scripts.kit_rNN` enxerga o kit.
-
-- **Local** — VS Code ou Jupyter, com a `venv` da disciplina.
-- **GitHub Codespaces** — botão _Code → Codespaces_ na página do repositório.
-- **Google Colab** — abra pelo GitHub (_File → Open notebook → GitHub_),
-  lembrando de subir também a pasta `scripts/`, e de **baixar o `.ipynb` e
-  commitá-lo** no fim: o Colab não faz push sozinho.
-
-Os notebooks não usam rede, não pedem upload e não dependem do Drive. Só
-Python puro até a Aula 13.
 
 ---
 

@@ -10,6 +10,13 @@ avaliativas são entregues — não há upload de arquivo em lugar nenhum. A
 entrega oficial, porém, só acontece quando o **link do seu repositório** é
 enviado no Google Sala de Aula (veja "Como entregar" abaixo).
 
+> ⚠️ **Crie o seu repositório como público.** É assim que o professor acessa
+> a correção direto pelo link, sem precisar de convite. Isso também significa
+> que a sua **matrícula fica visível** no notebook (você a digita no Passo 0
+> de cada atividade) — é um dado que identifica só você mesmo, mas se isso te
+> incomodar, fale com o professor sobre criar o repositório como privado e
+> adicioná-lo como colaborador.
+
 As atividades compõem o instrumento **"Exercícios práticos por bloco"**, que
 vale **30% da nota final**.
 
@@ -102,11 +109,13 @@ A entrega tem duas partes — o `git push` guarda o seu trabalho, mas **só
 conta como entregue depois que o link do repositório for enviado no Google
 Sala de Aula**.
 
-1. Preencha **todas** as células `# TODO` e todos os campos de texto.
-2. Rode o notebook **inteiro, de cima para baixo**, e **salve**. As saídas
+1. Confira se o seu repositório está como **público** (Settings →
+   General → Danger Zone, se precisar trocar).
+2. Preencha **todas** as células `# TODO` e todos os campos de texto.
+3. Rode o notebook **inteiro, de cima para baixo**, e **salve**. As saídas
    precisam estar visíveis no arquivo — é isso que o professor lê.
-3. Rode a última célula, `assinatura()`, e copie a linha impressa.
-4. Faça o commit final usando essa linha como mensagem, e dê push para a
+4. Rode a última célula, `assinatura()`, e copie a linha impressa.
+5. Faça o commit final usando essa linha como mensagem, e dê push para a
    branch `main` do **seu** repositório:
 
 ```bash
@@ -115,7 +124,7 @@ git commit -m "ASSINATURA: <cole aqui a linha impressa>"
 git push
 ```
 
-5. Vá ao **Google Sala de Aula**, abra a atividade correspondente e cole o
+6. Vá ao **Google Sala de Aula**, abra a atividade correspondente e cole o
    endereço do seu repositório no GitHub. **É esse link que registra a
    entrega** — sem ele o professor não sabe que você terminou, mesmo que o
    push tenha funcionado.

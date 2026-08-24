@@ -26,10 +26,12 @@ Cada relatório tem o seu próprio tema, mas todos seguem a mesma estrutura desc
 
 ## 🚀 Instruções para realização e entrega da atividade
 
-1. Acesse o repositório da disciplina no GitHub e clique em **"Use this
-   template" → "Create a new repository"**. Essa etapa cria um novo
-   repositório, independente, a partir do template fornecido pelo professor
-   — deixe a visibilidade como **pública**.
+1. Faça login na sua conta do GitHub (crie uma gratuita em
+   [github.com](https://github.com) se ainda não tiver — o botão do próximo
+   passo só aparece com você **logado**). Acesse o repositório da disciplina
+   e clique em **"Use this template" → "Create a new repository"**. Essa
+   etapa cria um novo repositório, independente, a partir do template
+   fornecido pelo professor — deixe a visibilidade como **pública**.
 2. Clone o seu novo repositório para o computador e desenvolva a atividade
    utilizando sua IDE preferida, como VS Code, Antigravity ou Cursor:
 

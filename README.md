@@ -4,11 +4,11 @@
 
 Prof. Dr. Hilton Ramalho
 
-Este repositório é **seu**: você o criou clicando em **"Use this template"**
-na página do repositório da disciplina no GitHub. É aqui que as atividades
-avaliativas são entregues — não há upload de arquivo em lugar nenhum. A
-entrega oficial, porém, só acontece quando o **link do seu repositório** é
-enviado no Google Sala de Aula (veja "Como entregar" abaixo).
+Este repositório-modelo é da disciplina. Seguindo as instruções abaixo, você
+cria a sua própria cópia, individual, onde as atividades avaliativas são
+desenvolvidas e entregues — não há upload de arquivo em lugar nenhum. A
+entrega oficial só acontece quando o **link do seu repositório** é enviado no
+Google Sala de Aula (veja "Instruções para realização e entrega" abaixo).
 
 > ⚠️ **Crie o seu repositório como público.** É assim que o professor acessa
 > a correção direto pelo link, sem precisar de convite. Isso também significa
@@ -24,33 +24,56 @@ Cada relatório tem o seu próprio tema, mas todos seguem a mesma estrutura desc
 
 ---
 
-## 🚀 Como começar
+## 🚀 Instruções para realização e entrega da atividade
 
-1. Na página do repositório da disciplina no GitHub, clique em **"Use this
-   template" → "Create a new repository"**. Dê um nome ao seu repositório e
-   deixe a visibilidade como **pública**.
-2. Clone o **seu** repositório recém-criado para a sua máquina:
+1. Acesse o repositório da disciplina no GitHub e clique em **"Use this
+   template" → "Create a new repository"**. Essa etapa cria um novo
+   repositório, independente, a partir do template fornecido pelo professor
+   — deixe a visibilidade como **pública**.
+2. Clone o seu novo repositório para o computador e desenvolva a atividade
+   utilizando sua IDE preferida, como VS Code, Antigravity ou Cursor:
 
    ```bash
    git clone <endereço do SEU repositório>
    cd <nome-do-seu-repositório>
    ```
 
-3. Abra a pasta na sua IDE preferida — VS Code, Cursor, Antigravity, ou
-   qualquer outra com suporte a Jupyter — e comece pelo notebook da
-   atividade da vez.
+3. Ao finalizar toda a atividade, salve e envie suas alterações para o
+   GitHub usando os comandos do git. A última célula de cada notebook —
+   `assinatura()` — imprime a linha exata que vai na mensagem do commit
+   final; o passo a passo completo (o que preencher, o que rodar, em que
+   ordem) está na seção "Fechando a entrega" do próprio notebook.
 
-> 💡 **Não quer instalar nada?** Duas alternativas rodam direto do navegador:
->
-> - **GitHub Codespaces** — botão _Code → Codespaces_ na página do repositório.
-> - **Google Colab** — abra pelo GitHub (_File → Open notebook → GitHub_),
->   lembrando de subir também a pasta `scripts/`, e de **baixar o `.ipynb` e
->   commitá-lo** no fim: o Colab não faz push sozinho.
->
-> Em qualquer uma das formas, o diretório de trabalho precisa ser a **raiz do
-> repositório** (onde ficam o notebook e a pasta `scripts/`) — é dali que o
-> `import scripts.kit_rNN` enxerga o kit. Os notebooks não usam rede, não
-> pedem upload e não dependem do Drive. Só Python puro até a Aula 13.
+> 💡 **Não quer instalar nada?** GitHub Codespaces (botão _Code →
+> Codespaces_ na página do repositório) e Google Colab (_File → Open
+> notebook → GitHub_) também servem — no Colab, lembre de subir a pasta
+> `scripts/` e de **baixar o `.ipynb` e commitá-lo** no fim, já que ele não
+> dá push sozinho. Em qualquer uma das formas, o diretório de trabalho
+> precisa ser a raiz do repositório (onde ficam o notebook e a pasta
+> `scripts/`).
+
+### Entrega
+
+A entrega possui duas partes:
+
+- **Parte 1 — GitHub:** certifique-se de que todo o código e os arquivos da
+  atividade foram enviados para o seu repositório público no GitHub.
+- **Parte 2 — Google Sala de Aula:** acesse a atividade no Google Sala de
+  Aula e cole o link público do seu repositório no GitHub no campo de
+  entrega. **É esse link que registra a entrega** — sem ele o professor não
+  sabe que você terminou, mesmo que o push tenha funcionado.
+
+> ⚠️ **Importante:** antes de enviar a atividade, verifique se o
+> repositório está **público** e se todas as alterações foram efetivamente
+> enviadas para o ramo `main`.
+
+> 💡 **Commits durante o trabalho são bem-vindos.** Commit a cada exercício
+> resolvido, se quiser — nada no histórico é penalizado. Vale o **último
+> commit antes do prazo**; o link só precisa ser colado uma vez no Google
+> Sala de Aula, mesmo que você continue commitando depois.
+
+A correção volta como **nota e comentário no Google Sala de Aula** — é lá que
+a conversa continua, e é lá que você responde se discordar de algum ponto.
 
 ---
 
@@ -130,47 +153,6 @@ lado do notebook, e você lê quando quiser com `diario()`. Nada é coletado às
 escondidas. Na correção, o que conta são as **notas** que você escreveu em
 cada `registrar()` — uma nota específica ("travei no `elif`, tinha esquecido os
 dois-pontos") vale mais que dez registros vazios.
-
----
-
-## 📤 Como entregar
-
-A entrega tem duas partes — o `git push` guarda o seu trabalho, mas **só
-conta como entregue depois que o link do repositório for enviado no Google
-Sala de Aula**.
-
-1. Preencha **todas** as células `# TODO` e todos os campos de texto.
-2. Rode o notebook **inteiro, de cima para baixo**, e **salve**. As saídas
-   precisam estar visíveis no arquivo — é isso que o professor lê.
-3. Rode a última célula, `assinatura()`, e copie a linha impressa.
-4. Faça o commit final usando essa linha como mensagem, e dê push para a
-   branch `main` do **seu** repositório:
-
-```bash
-git add atividade-01-a-regua-do-observatorio.ipynb
-git commit -m "ASSINATURA: <cole aqui a linha impressa>"
-git push
-```
-
-5. Vá ao **Google Sala de Aula**, abra a atividade correspondente e cole o
-   endereço do seu repositório no GitHub. **É esse link que registra a
-   entrega** — sem ele o professor não sabe que você terminou, mesmo que o
-   push tenha funcionado.
-
-Confira na página do repositório no GitHub se o notebook aparece com as
-saídas.
-
-> 💡 **Commits durante o trabalho são bem-vindos.** Commit a cada exercício
-> resolvido, se quiser. O histórico é o registro mais honesto do seu processo,
-> e nada nele é penalizado: um `git log` com idas e vindas é exatamente o que
-> se espera de quem está aprendendo.
->
-> ⏰ Vale o **último commit antes do prazo**. Você só precisa colar o link uma
-> vez — se enviar antes de terminar, continue commitando e dando push até o
-> prazo: é o último commit que entra na correção.
-
-A correção volta como **nota e comentário no Google Sala de Aula** — é lá que
-a conversa continua, e é lá que você responde se discordar de algum ponto.
 
 ---
 

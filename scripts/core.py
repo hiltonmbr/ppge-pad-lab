@@ -5,7 +5,7 @@ previsão e assinatura de entrega. Ele não sabe nada sobre economia — quem
 sabe é o *kit* de cada atividade (``kit_r01.py``, ``kit_r02.py``, ...).
 
     ┌─────────────────┐        ┌──────────────────────────────┐
-    │   nucleo.py     │  ←──   │  kit_rNN.py (um por relatório)│
+    │    core.py      │  ←──   │  kit_rNN.py (um por relatório)│
     │  (mecânica)     │        │  painel + dados + checagens   │
     └─────────────────┘        └──────────────────────────────┘
                                           ↑
@@ -27,7 +27,7 @@ import random
 import sys
 import time
 
-VERSAO_NUCLEO = "2.1"
+VERSAO_CORE = "2.1"
 
 #: Tamanho máximo de turma previsto para a disciplina. Todo sorteio de
 #: "caso pessoal" precisa ter pelo menos esta quantidade de resultados

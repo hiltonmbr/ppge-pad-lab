@@ -22,11 +22,11 @@ nem funções, e o kit não pode entregar nenhuma dessas coisas.
 
 Este arquivo é legível de propósito: se você quiser entender de onde saíram os
 seus números, leia o código. A mecânica compartilhada (semente, diário,
-assinatura) mora em ``nucleo.py``.
+assinatura) mora em ``core.py``.
 """
 
-from . import nucleo
-from .nucleo import (
+from . import core
+from .core import (
     checar_bool,
     checar_igual,
     checar_numero,
@@ -139,14 +139,14 @@ def _gerar(matricula, ger):
     alterar, suba ``VERSAO``.
     """
     nome, uf, populacao, pib_pc, idh, pobreza = _PAINEL[
-        nucleo.indice_sem_colisao(matricula, len(_PAINEL))
+        core.indice_sem_colisao(matricula, len(_PAINEL))
     ]
 
     ano = _ANOS_FOCO[ger.randrange(len(_ANOS_FOCO))]
-    populacao = round(nucleo.perturbar(populacao, ger, 0.08, minimo=1.0), 1)
-    pib_pc = round(nucleo.perturbar(pib_pc, ger, 0.10, minimo=1000.0), 2)
-    idh = round(nucleo.perturbar(idh, ger, 0.06, minimo=0.400, maximo=0.949), 3)
-    pobreza = round(nucleo.perturbar(pobreza, ger, 0.12, minimo=0.5, maximo=60.0), 1)
+    populacao = round(core.perturbar(populacao, ger, 0.08, minimo=1.0), 1)
+    pib_pc = round(core.perturbar(pib_pc, ger, 0.10, minimo=1000.0), 2)
+    idh = round(core.perturbar(idh, ger, 0.06, minimo=0.400, maximo=0.949), 3)
+    pobreza = round(core.perturbar(pobreza, ger, 0.12, minimo=0.5, maximo=60.0), 1)
 
     # série histórica: o PIB per capita de hoje, "desandado" por um
     # crescimento observado que pode ser negativo — há município brasileiro
@@ -452,7 +452,7 @@ def _checagens(etapa, r, d):
 
 
 # ---------------------------------------------------------------- montagem
-_KIT = nucleo.Kit(
+_KIT = core.Kit(
     atividade=ATIVIDADE,
     titulo="Relatório 01 — A Régua do Observatório",
     versao=VERSAO,
